@@ -32,7 +32,7 @@ payload:
   - DOMAIN-SUFFIX,hk
   - DOMAIN-SUFFIX,jp
   - DOMAIN-SUFFIX,kr
-  - DOMAIN-SUFFIX,sg
+  # - DOMAIN-SUFFIX,sg
   - DOMAIN-SUFFIX,tw
   - DOMAIN-SUFFIX,uk
   - DOMAIN-SUFFIX,us
