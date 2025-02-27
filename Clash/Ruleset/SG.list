@@ -14,5 +14,5 @@ DOMAIN,citibank.com.sg
 DOMAIN,cimbclicks.com.sg
 
 # .sg Domain
-GEOIP,SG
+# GEOIP,SG
 DOMAIN-SUFFIX,sg
