@@ -1,0 +1,17 @@
+# 内容：Singapore
+# 数量：3条
+
+# Youtrip
+DOMAIN,you.co
+
+# Gov
+DOMAIN,gov.sg
+
+# Banking
+DOMAIN,dbs.com
+DOMAIN,uob.com.sg
+DOMAIN,citibank.com.sg
+DOMAIN,cimbclicks.com.sg
+
+# .sg Domain
+GEOIP,SG
