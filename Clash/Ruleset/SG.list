@@ -1,5 +1,5 @@
 # 内容：Singapore
-# 数量：7条
+# 数量：8条
 
 # Youtrip
 DOMAIN,you.co
@@ -15,3 +15,4 @@ DOMAIN,cimbclicks.com.sg
 
 # .sg Domain
 GEOIP,SG
+DOMAIN-SUFFIX,sg
