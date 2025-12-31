@@ -1,0 +1,97 @@
+[custom]
+;不要随意改变关键字，否则会导致出错
+;acl4SSR规则
+
+;去广告：支持
+;自动测速：支持
+;微软分流：支持
+;苹果分流：支持
+;增强中国IP段：支持
+;增强国外GFW：支持
+
+;设置规则标志位
+ruleset=🎯 China,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+ruleset=🎯 China,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+ruleset=🛑 Ads,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+ruleset=🍃 App Ads,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+ruleset=🆎 AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list
+ruleset=🆎 AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list
+ruleset=🛡️ Privacy List,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
+ruleset=📢 Google FCM,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+ruleset=🎯 China,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+ruleset=🎯 China,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+ruleset=Ⓜ️ Microsoft Bing,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Bing.list
+ruleset=Ⓜ️ OneDrive,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
+ruleset=Ⓜ️ Microsoft,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+ruleset=🍎 Apple,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+ruleset=📲 Telegram,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+ruleset=💬 Ai,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
+ruleset=💬 Ai,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
+ruleset=💬 Ai,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
+ruleset=🎶 NetEase Music,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list
+ruleset=🎮 Gaming,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list
+ruleset=🎮 Gaming,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list
+ruleset=🎮 Gaming,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list
+ruleset=🎮 Gaming,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+ruleset=🎮 Gaming,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list
+ruleset=📹 Youtube,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+ruleset=🎥 Netflix,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
+ruleset=📺 Bahamut,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list
+ruleset=📺 Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
+ruleset=📺 Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+ruleset=🇸🇬 Singapore,https://raw.githubusercontent.com/mmmelttt/ACL4SSR/master/Clash/Ruleset/SG.list
+ruleset=🌏 China Media,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
+ruleset=🌍 Global Media,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+ruleset=🚀 Proxy Select,https://raw.githubusercontent.com/mmmelttt/ACL4SSR/master/Clash/ProxyGFWlist.list
+;ruleset=🎯 China,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
+ruleset=🎯 China,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+ruleset=🎯 China,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+ruleset=🎯 China,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+;ruleset=🎯 China,[]GEOIP,LAN
+ruleset=🎯 China,[]GEOIP,CN
+ruleset=🐟 RestOfTheWorld,[]FINAL
+;设置规则标志位
+
+;设置分组标志位
+custom_proxy_group=🚀 Proxy Select`select`[]♻️ Auto`[]🔯 Fallback`[]🔮 Load Balance`[]🇭🇰 Hong Kong`[]🇨🇳 Taiwan`[]🇸🇬 Singapore`[]🇯🇵 Japan`[]🇺🇲 US`[]🇰🇷 Korea`[]🚀 Manual Proxy`[]DIRECT
+custom_proxy_group=🚀 Manual Proxy`select`.*
+custom_proxy_group=♻️ Auto`url-test`.*`https://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🔯 Fallback`fallback`.*`https://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🔮 Load Balance`load-balance`.*`https://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=📲 Telegram`select`[]🚀 Proxy Select`[]♻️ Auto`[]🇸🇬 Singapore`[]🇭🇰 Hong Kong`[]🇨🇳 Taiwan`[]🇯🇵 Japan`[]🇺🇲 US`[]🇰🇷 Korea`[]🚀 Manual Proxy`[]DIRECT
+custom_proxy_group=💬 OpenAi`select`[]🚀 Proxy Select`[]♻️ Auto`[]🇸🇬 Singapore`[]🇭🇰 Hong Kong`[]🇨🇳 Taiwan`[]🇯🇵 Japan`[]🇺🇲 US`[]🇰🇷 Korea`[]🚀 Manual Proxy`[]DIRECT
+custom_proxy_group=📹 Youtube`select`[]🚀 Proxy Select`[]♻️ Auto`[]🇸🇬 Singapore`[]🇭🇰 Hong Kong`[]🇨🇳 Taiwan`[]🇯🇵 Japan`[]🇺🇲 US`[]🇰🇷 Korea`[]🚀 Manual Proxy`[]DIRECT
+custom_proxy_group=🎥 Netflix`select`[]🎥 奈飞节点`[]🚀 Proxy Select`[]♻️ Auto`[]🇸🇬 Singapore`[]🇭🇰 Hong Kong`[]🇨🇳 Taiwan`[]🇯🇵 Japan`[]🇺🇲 US`[]🇰🇷 Korea`[]🚀 Manual Proxy`[]DIRECT
+custom_proxy_group=📺 IPTV`select`(香港|Hong Kong|Hong Kong|HKBGP|Taiwan|日本|JAPAN|Japan|Korea|新加坡|SINGAPORE|Singapore|United States|美国|Great Britain|英国|Netherlands|荷兰|Germany|德国|France|法国|瑞士|阿尔巴尼亚|西班牙|Thailand|泰国|Philippines|菲律宾|Malaysia|马来西亚|Vietnam|印尼)
+custom_proxy_group=📺 Bahamut`select`[]🇨🇳 Taiwan`[]🚀 Proxy Select`[]🚀 Manual Proxy`[]DIRECT
+custom_proxy_group=📺 Bilibili`select`[]🎯 China`[]🇨🇳 Taiwan`[]🇭🇰 Hong Kong
+custom_proxy_group=🌍 Global Media`select`[]🚀 Proxy Select`[]♻️ Auto`[]🇭🇰 Hong Kong`[]🇨🇳 Taiwan`[]🇸🇬 Singapore`[]🇯🇵 Japan`[]🇺🇲 US`[]🇰🇷 Korea`[]🚀 Manual Proxy`[]DIRECT
+custom_proxy_group=🌏 China Media`select`[]DIRECT`[]🇭🇰 Hong Kong`[]🇨🇳 Taiwan`[]🇸🇬 Singapore`[]🇯🇵 Japan`[]🚀 Manual Proxy
+custom_proxy_group=📢 Google FCM`select`[]DIRECT`[]🚀 Proxy Select`[]🇺🇲 US`[]🇭🇰 Hong Kong`[]🇨🇳 Taiwan`[]🇸🇬 Singapore`[]🇯🇵 Japan`[]🇰🇷 Korea`[]🚀 Manual Proxy
+custom_proxy_group=Ⓜ️ Microsoft Bing`select`[]DIRECT`[]🚀 Proxy Select`[]🇺🇲 US`[]🇭🇰 Hong Kong`[]🇨🇳 Taiwan`[]🇸🇬 Singapore`[]🇯🇵 Japan`[]🇰🇷 Korea`[]🚀 Manual Proxy
+custom_proxy_group=Ⓜ️ OneDrive`select`[]DIRECT`[]🚀 Proxy Select`[]🇺🇲 US`[]🇭🇰 Hong Kong`[]🇨🇳 Taiwan`[]🇸🇬 Singapore`[]🇯🇵 Japan`[]🇰🇷 Korea`[]🚀 Manual Proxy
+custom_proxy_group=Ⓜ️ Microsoft`select`[]DIRECT`[]🚀 Proxy Select`[]🇺🇲 US`[]🇭🇰 Hong Kong`[]🇨🇳 Taiwan`[]🇸🇬 Singapore`[]🇯🇵 Japan`[]🇰🇷 Korea`[]🚀 Manual Proxy
+custom_proxy_group=🍎 Apple`select`[]DIRECT`[]🚀 Proxy Select`[]🇺🇲 US`[]🇭🇰 Hong Kong`[]🇨🇳 Taiwan`[]🇸🇬 Singapore`[]🇯🇵 Japan`[]🇰🇷 Korea`[]🚀 Manual Proxy
+custom_proxy_group=🎮 Gaming`select`[]DIRECT`[]🚀 Proxy Select`[]🇺🇲 US`[]🇭🇰 Hong Kong`[]🇨🇳 Taiwan`[]🇸🇬 Singapore`[]🇯🇵 Japan`[]🇰🇷 Korea`[]🚀 Manual Proxy
+custom_proxy_group=🎶 NetEase Music`select`[]DIRECT`[]🚀 Proxy Select`[]♻️ Auto`(网易|音乐|解锁|Music|NetEase)
+custom_proxy_group=🎯 China`select`[]DIRECT`[]🚀 Proxy Select`[]♻️ Auto
+custom_proxy_group=🛑 Ads`select`[]REJECT`[]DIRECT
+custom_proxy_group=🍃 App Ads`select`[]REJECT`[]DIRECT
+custom_proxy_group=🆎 AdBlock`select`[]REJECT`[]DIRECT
+custom_proxy_group=🛡️ Privacy List`select`[]REJECT`[]DIRECT
+custom_proxy_group=🐟 RestOfTheWorld`select`[]🚀 Proxy Select`[]♻️ Auto`[]DIRECT`(Hong Kong|港|Japan|日本|Singapore|新加坡|SINGAPORE|Korea|United States|美国|Great Britain|英国|Netherlands|荷兰|Germany|德国|France|法国|瑞士|阿尔巴尼亚|西班牙|Turkey|Thailand|泰国|Philippines|菲律宾|Malaysia|马来西亚|India|印尼|Vietnam)
+custom_proxy_group=🇭🇰 Hong Kong`url-test`(港|HK|hk|Hong Kong|Hong Kong|Hong Kong)`https://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🇯🇵 Japan`url-test`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan)`https://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🇺🇲 US`url-test`(美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|United States)`https://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🇨🇳 Taiwan`url-test`(台|新北|彰化|TW|Taiwan)`https://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🇸🇬 Singapore`url-test`(新加坡|坡|狮城|SG|SINGAPORE|Singapore)`https://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🇰🇷 Korea`url-test`(KR|Korea|KOR|首尔|韩国|韓)`https://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🎥 奈飞节点`select`(NF|奈飞|解锁|Netflix|NETFLIX|Media)
+;设置分组标志位
+
+enable_rule_generator=true
+overwrite_original_rules=true
+
+;clash_rule_base=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GeneralClashConfig.yml
+
+;luck
